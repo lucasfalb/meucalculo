@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuCalculo.me</title>
+    <meta name="description" content="Faça calculos de forma: FÁCIL RÁPIDA e EFICIENTE">
+    <meta name="robots" content="all">
+    <meta name="author" content="lucasfalb">
+    <meta name="keywords" content="calcular, calcular média, raiz quadrada, imc">
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/raizquadrada.css">
+    <link rel="stylesheet" href="./assets/css/numeros.css">
+    <link rel="shortcut icon" href="./assets/imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+
+        <section class="meucalculo fadeIn">
+            <h1>Faça cálculos de forma <br>
+                <span class="span-green">FÁCIL RÁPIDA e EFICIENTE</span>
+            </h1>
+            <article class="main-content">
+                <form class="form-meuCalculo">
+                    <label for="opcoes">ESCOLHA O QUE DESEJA CALCULAR:</label>
+                    <div class="form-fix">
+                        <select class="inputOpcoes">
+                            <option value="raizquadrada">Calcular raiz quadrada</option>
+                            <option value="imc">Calculo do IMC</option>
+                        </select>
+                        <button class="btn">Iniciar</button>
+                    </div>
+                </form>
+                <img id="img" style="width: 500px;height: 500px;" src="./assets/imgs/svg_calculator.svg"
+                    alt="calculator">
+
+                <!-- RAIZ QUADRADA -->
+                <article style="display: none;" class="areadecalculo raizquadrada fadeInRapida">
+                    <h2>A raiz quadrade de </h2>
+                    <input type="number" placeholder="81" id="numeroRQ">
+                    <div class="resultadoContainer fadeInRapida" style="display:none;">
+                        <h2>é</h2>
+                        <div class="resultadoDoCalculo" id="resultadoRQ"></div>
+                    </div>
+                    <button class="btn-meucalculo" id="calcularRQ">Calcular</button>
+                    <article class="articleResultado fadeInRapida" style="display: none;">
+                        <h2 style="text-align: center;">O que é?</h2>
+                        <p>A raiz quadrada é uma operação básica e importante da <strong>Matemática</strong>. Se trata da operação
+                            inversa da potenciação. Assim, calcular a raiz quadrada de um número n é descobrir qual
+                            número elevado ao quadrado resulta em n. <strong>Por exemplo, a raiz quadrada de 9 é igual a 3,
+                            pois, 3² é 9</strong>. Uma raiz quadrada pode ser exata, gerando um número chamado de quadrado
+                            perfeito, ou pode ser não exata.</p>
+
+                        <p>A raiz quadrada é um caso particular e comum de radiciação. Calcular a raiz quadrada de um
+                            número x é procurar qual número elevado a dois resulta em x.
+                        <ul>
+                            <li>A raiz quadrada é uma radiciação que possui o índice igual a 2.</li>
+                            <li>Ela é a operação inversa de uma potência de expoente 2.</li>
+                            <li>Seus elementos fundamentais são: índice, radical, radicando e raiz.</li>
+                            <li>A raiz quadrada de um número a é representada por √a.</li>
+                            <li>Pode ser exata ou não exata.</li>
+                        </ul>
+                        </p>
+                    </article>
+                    </div>
+                    <table class="ultimosresultados" style="display: none;">
+                        <caption>ÚLTIMOS RESULTADOS</caption>
+                        <thead>
+                            <tr>
+                                <th>Número</th>
+                                <th>Raiz</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>81</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- IMC -->
+                <article style="display: none;" class="areadecalculo imc fadeInRapida">
+                    <h2>Nome</h2>
+                    <input type="text" placeholder="Lucas" id="nomeImc">
+                    <h2>Altura</h2>
+                    <input type="number" placeholder="1.75"  id="alturaImc">
+                    <h2>Peso</h2>
+                    <input type="number" placeholder="63" id="pesoImc">
+                    <button class="btn-meucalculo" id="calcularImc">Calcular</button>
+                    <div class="resultadoContainer fadeInRapida" style="display: none;">
+                        <div class="resultadoDoCalculo" id="resultadoImc"></div>
+
+                        <article class="articleResultado fadeInRapida" style="display:none">
+                            <h2 style="text-align: center;">Como é calculado?</h2>
+                            <p>O IMC é a relação entre peso e altura e o cálculo é feito de acordo com a fórmula:</p>
+
+                            <p style="text-align: center;font-weight: bold;">IMC = peso / (altura x altura)</p>
+
+                            <p>O peso deve estar em kg e a altura em metros, e o resultado é dado em kg/m2. Depois de
+                                obter o resultado, é possível verificar em que faixa o IMC se encontra, podendo indicar:
+                            </p>
+                            <table class="imcTabela">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>IMC</th>
+                                        <th>PESO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="font-weight: bold;">Magreza</td>
+                                        <td>
+                                            < 17.3</td>
+                                        <td>
+                                            < 50 Kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold;">Normal</td>
+                                        <td>17.3 a 25.5</td>
+                                        <td>50 a 73.7 Kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold;">Sobrepeso</td>
+                                        <td>25.5 a 29.7</td>
+                                        <td>73.7 a 85.8 Kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold;">Obesidade</td>
+                                        <td>> 29.7</td>
+                                        <td>> 85.8 Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Assim, de acordo com o resultado do IMC é possível também saber se existe algum risco de
+                                desenvolver doenças. Isto porque quanto maior é o valor do IMC, maior é a quantidade de
+                                gordura acumulada no corpo e maior é o risco da pessoa ter doenças como pressão alta,
+                                diabetes e doenças cardíacas.</p>
+                        </article>
+                    </div>
+                    <table class="ultimosresultados" style="display: none;">
+                        <caption>ÚLTIMOS RESULTADOS</caption>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>IMC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lucas</td>
+                                <td>17.2</td>
+                            </tr>
+                            <tr>
+                                <td>Teste</td>
+                                <td>20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <div class="footer">
+                    <h2 class="h2-footer">meucalculo.me</h2>
+                </div>
+            </article>
+        </section>
+
+        <div class="numeros">
+            <img class="svg" src="./assets/imgs/numeros/1.svg" alt="1">
+            <img class="svg" src="./assets/imgs/numeros/2.svg" alt="2">
+            <img class="svg" src="./assets/imgs/numeros/3.svg" alt="3">
+            <img class="svg" src="./assets/imgs/numeros/4.svg" alt="4">
+            <img class="svg" src="./assets/imgs/numeros/5.svg" alt="5">
+            <img class="svg" src="./assets/imgs/numeros/6.svg" alt="6">
+            <img class="svg" src="./assets/imgs/numeros/7.svg" alt="1">
+            <img class="svg" src="./assets/imgs/numeros/8.svg" alt="2">
+            <img class="svg" src="./assets/imgs/numeros/9.svg" alt="3">
+            <img class="svg" src="./assets/imgs/numeros/10.svg" alt="4">
+            <img class="svg" src="./assets/imgs/numeros/-.svg" alt="5">
+            <img class="svg" src="./assets/imgs/numeros/X.svg" alt="6">
+            <img class="svg" src="./assets/imgs/numeros/+.svg" alt="6">
+
+        </div>
+    </main>
+</body>
+<script src="./assets/js/meucalculo.js"></script>
+
+</html>
