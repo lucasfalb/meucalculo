@@ -157,8 +157,9 @@
           <p>Recomendamos o programa <a href="https://code.visualstudio.com">Visual Studio Code</a> como principal ferramenta de trabalho no tocante ao desenvolvimento front-end de nossos portais, e para que seja possível configurar o ambiente de SFTP precisaremos de uma extensão chamada <b>SFTP</b>, porém há diversas extensões com este nome, a que utilizamos tem como autor: <i>Natizysmkunk</i> <a href="https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp">clique aqui</a> para instalar a extensão em seu programa.</p>
           
           <p>Após efetuado a instalação da instalação, para uma documentação mais direta, segue o passo a passo em vídeo de como configurar o ambiente SFTP do Projeto em sua máquina:</p>
-              <embed src="./assets/videos/configurandoSFTP.mp4" playsinline autoplay="false" preload="none" height="400" width="100%" controls allowfullscreen="true" />
-              <span>Caso não carregue o vídeo, <a href="./assets/videos/configurandoSFTP.mp4">assista aqui</a>.</span>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AE8DGbAbcoM" allowfullscreen></iframe>
+          </div>
             </section>
         
 		<hr class="divider">
@@ -216,7 +217,7 @@
           <p>Na prática, o design responsivo é o design que responde ao contexto do usuário. Se o usuário acessar pelo celular, por exemplo, os blocos de conteúdo são reposicionados para facilitar a leitura e os botões e fontes ficam maiores para facilitar o clique, isso acontece para que usuário tenha a melhor experiência de uso possível, independente da tela.</p>
 
           <h3 id="mw_mobileedesktop">Mobile e Desktop com ?d=1</h3>
-          <p>Quando seguimos no caminho de ser feito modelo para desktop e mobile, não se foge muito do principio de responsividade convencional, ainda a aplicamos, porém, utilizando breakpoints específicos. No modo <b>desktop</b> utilizamos <code>max-width</code> de 1200px, e levamos o layout até <code>min-width:</code> 1000px. E a partir dai utilizamos midiaqueries a partir dos 700px, para ajustar o elementos do portal para a versão mobile.</p>
+          <p>Quando seguimos no caminho de ser feito modelo para desktop e mobile, não se foge muito do principio de responsividade convencional, ainda a aplicamos, porém, utilizando breakpoints específicos. No modo <b>desktop</b> utilizamos <code>max-width</code> de 1200px, e levamos o layout até <code>min-width:</code> 1000px. E a partir dai utilizamos Media Queries a partir dos 700px, para ajustar o elementos do portal para a versão mobile.</p>
 
           <h3 id="mw_redirectmodule">redirect.module</h3>
           <p>Este módulo é responsável por fazer a verificação se o usuário está acessando o portal através de um dispositivo mobile ou não, após feita a checagem direciona ele para a versão respectiva, é um módulo indispensável na aplicação da responsividade. É fácil localizado em <code>/modules/redirect.module</code>.</p>
