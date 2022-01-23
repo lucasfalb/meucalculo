@@ -279,12 +279,12 @@
             <h2 id="mw_mwtpl">MWTPL</h2>
             <p>Em um portal desenvolvido pela Mundiware utilizamos a MWTPL, um conjunto de tags próprias para a implementação do conteúdo nas páginas do site, seu uso correto é primordial para o funcionamento do online. Todas as tags da Mundiware deverão ser colocadas sempre ao chamar um conteúdo externo, seja ele folha de estilos, imagens, javascript e, é claro, o conteúdo localizado no banco de dados.</p>
 
-            <h1 id="linguagem-tags" class="page-header">Tags</h1>
+            <h3 id="linguagem-tags" class="page-header">Tags</h3>
 							<p class="lead mw-pad-b-15">Todas as tags devem iniciar sua nomenclatura com <b>mw:</b> na frente (ex: <code>&lt;mw:nomeDaTag&gt;</code>…<code>&lt;/mw:nomeDaTag&gt;</code>).
 							Todas as tags possuem propriedades.
 							Não há diferenciação entre maiúsculas e minúsculas (ex: <code>&lt;MW:nomedatag&gt;</code>…<code>&lt;/mw:NOMEdaTag&gt;</code>).</p>
 							
-						<h2 id="set">&lt;mw:set/&gt;</h2>
+						<h3 id="set">&lt;mw:set/&gt;</h3>
 							<p class="mw-pad-b-15">Usada para criar uma variável e armazenar algo nela.</p>
 								<table class="table table-bordered table-striped">
 									<thead>
@@ -311,7 +311,7 @@
 									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:set</span> <span class="na">var=</span><span class="s">"excluirCategorias"</span> <span class="na">value=</span><span class="s">"list('Nome da categoria1', 'Nome da categoria2')"</span><span class="nt">/&gt;</span></code></pre></figure>
 									
 								
-						<h2 class="mw-pad-t-15" id="loadArticles">&lt;mw:loadArticles/&gt;</h2>
+						<h3 class="mw-pad-t-15" id="loadArticles">&lt;mw:loadArticles/&gt;</h3>
 							<p class="mw-pad-b-15">Usada para carregar as matérias de uma determinada editoria.</p>
 								<table class="table table-bordered table-striped">
 									<thead>
@@ -388,7 +388,7 @@
 									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:applyTemplate</span> <span class="na">path=</span><span class="s">"modules/nomeDoModulo.module"</span><span class="nt">/&gt;</span></code></pre></figure>
 							
 							
-								<h2 id="iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h2>
+								<h3 id="iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada para criar uma repetição de conteúdo.</p>
 									
 									<table class="table table-bordered table-striped">
@@ -421,7 +421,7 @@
 									
 							
 							
-								<h2 id="url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h2>
+								<h3 id="url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada em todas as urls que fazem ligação com os arquivos do site e conteúdos do banco de dados.</p>
 									
 									<table class="table table-bordered table-striped">
@@ -454,7 +454,7 @@
 									
 							
 							
-								<h2 id="property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h2>
+								<h3 id="property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h3>
 							
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada para imprimir algum conteúdo do banco de dados.</p>
 									
@@ -492,7 +492,7 @@
 									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.safeLead"</span> <span class="na">length=</span><span class="s">"100"</span><span class="nt">/&gt;</span></code></pre></figure>
 							
 							
-								<h2 id="if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h2>
+								<h3 id="if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h3>
 								
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada para a criação de uma condição e sua aplicação caso for verdadeira.</p>
 									
@@ -527,7 +527,7 @@
 									
 							
 							
-								<h2 id="else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h2>
+								<h3 id="else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa.</p>
 									
 									<table class="table table-bordered table-striped">
@@ -553,7 +553,7 @@
 									
 								
 							
-								<h2 id="elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h2>
+								<h3 id="elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa e criando uma nova condição.</p>
 									
 									<table class="table table-bordered table-striped">
@@ -579,7 +579,7 @@
 									
 							
 							
-								<h2 id="renderStyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h2>
+								<h3 id="renderStyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
 									
 									<table class="table table-bordered table-striped">
@@ -603,7 +603,7 @@
 									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
 									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderStyles</span> <span class="na">makeBundle=</span><span class="s">"true"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderStyles&gt;</span></code></pre></figure>
 									
-								<h2 id="renderScripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h2>
+								<h2 id="renderScripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
 									
 									<table class="table table-bordered table-striped">
@@ -628,7 +628,7 @@
 									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderScripts</span> <span class="na">makeBundle=</span><span class="s">"false"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderScripts&gt;</span></code></pre></figure>
 							
 							
-								<h2 id="param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h2>
+								<h3 id="param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h3>
 									<p class="mw-pad-b-15 mw-pad-t-5">Usada para chamar um CSS ou JavaScript externos.</p>
 									
 									<table class="table table-bordered table-striped">
