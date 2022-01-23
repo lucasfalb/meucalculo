@@ -125,11 +125,7 @@
               <li class="nav-item"><a class="nav-link" href="#mw_param">&lt;mw:param/&gt;</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#mw_article">Article</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#mw_article">#</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#mw_article">Article</a></li>
           <li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
@@ -741,12 +737,18 @@
 
           <section>
             <h2 id="mw_article">Article</h2>
+            <p>Após apresentado as Tags MWTPL, podemos seguir adiante com o desenvolvimentodo portal. Começamos pelo Article, deve-se ser seguido o padrão de desenho encaminhado pelo designer responsável do projeto, desde o peso das fontes, até as margens devem estar perfeitamente definidas.</p>
+
             <p>Um article pode ser um <b>module</b>, uma <b>page</b> ou até estar direto no <b>template</b>, apesar de
               usarmos, por padrão, como um <b>module</b>. Em articles é comum usarmos as tags <code>&lt;mw:property
                 value=""/&gt;</code> para chamarmos itens das matérias e <code>&lt;mw:applyTemplate path=""/&gt;</code>
               para inserirmos modules externos. No article nós costumamos chamar o título da matéria, por exemplo:
               <code>&lt;mw:property value="article.header"/&gt;</code>.</p>
 
+              <h5>Eexemplo da estrutura de um Article</h5>
+              <a class="popup-img" href="assets/images/exemploarticle.png">
+                <img src="assets/images/exemploarticle.png" class="img-fluid img-thumbnail" alt="Exemplo Article">
+              </a>
             <div class="table-responsive">
               <table class="table table-bordered">
                 <thead>
