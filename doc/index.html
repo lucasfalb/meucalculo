@@ -357,29 +357,31 @@
                 <tbody>
                   <tr>
                     <td>- Tag sem conteúdo<br>
-                      - Implementada preferencialmente antes da tag <code><html></code></td>
+                      - Implementada preferencialmente antes da tag <code>
+                        <html>
+                      </code></td>
                     <td>var, amount, categoryName, includeText, withSpecialImages, addToExclusionLists, exclusionLists,
                       excludeCategoriesByNames, articleId, loadImages, loadSpecialImages, categoryId, includeViewCount,
                       loadThumbnails, offset, countVar</td>
-                      <td>
-                        <b>Var</b> - Cria uma variável<br>
-                        <b>Amount</b> - Define a quantidade de artigos que será carregado<br>
-                        <b>CategoryName</b> - Define de qual categoria será carregado os artigos através do nome<br>
-                        <b>CategoryId</b> - Define de qual categoria será carregado os artigos através do ID<br>
-                        <b>ArticleId</b> - Define <u>um</u> artigo específico pelo ID<br>
-                        <b>IncludeText</b> - Define se carregará o texto dos artigos<br>
-                        <b>WithSpecialImages</b> - Define que imagens especiais dos artigos será carregada<br>
-                        <b>LoadImages</b> - Define se carregará todas as imagens de uma determinada categoria<br>
-                        <b>LoadSpecialImages</b> - Define que imagens especiais dos artigos será carregada<br>
-                        <b>LoadThumbnails</b> - Define se carregará as thumbnails das imagens<br>
-                        <b>AddToExclusionLists</b> - Adiciona os artigos à lista de exclusão<br>
-                        <b>ExclusionLists</b> - Lista de exclusão no qual não deixa repetir o mesmo artigo da categoria
-                        nos resultados de busca<br>
-                        <b>ExcludeCategoriesByNames</b> - Adiciona as categorias à lista de exclusão<br>
-                        <b>IncludeViewCount</b> - Define se carregará o número da quantidade total de artigos<br>
-                        <b>Offset</b> - Define quantos artigos serão pulados<br>
-                        <b>CountVar</b> - Define quantos artigos totais serão carregados (para paginação)
-                      </td>
+                    <td>
+                      <b>Var</b> - Cria uma variável<br>
+                      <b>Amount</b> - Define a quantidade de artigos que será carregado<br>
+                      <b>CategoryName</b> - Define de qual categoria será carregado os artigos através do nome<br>
+                      <b>CategoryId</b> - Define de qual categoria será carregado os artigos através do ID<br>
+                      <b>ArticleId</b> - Define <u>um</u> artigo específico pelo ID<br>
+                      <b>IncludeText</b> - Define se carregará o texto dos artigos<br>
+                      <b>WithSpecialImages</b> - Define que imagens especiais dos artigos será carregada<br>
+                      <b>LoadImages</b> - Define se carregará todas as imagens de uma determinada categoria<br>
+                      <b>LoadSpecialImages</b> - Define que imagens especiais dos artigos será carregada<br>
+                      <b>LoadThumbnails</b> - Define se carregará as thumbnails das imagens<br>
+                      <b>AddToExclusionLists</b> - Adiciona os artigos à lista de exclusão<br>
+                      <b>ExclusionLists</b> - Lista de exclusão no qual não deixa repetir o mesmo artigo da categoria
+                      nos resultados de busca<br>
+                      <b>ExcludeCategoriesByNames</b> - Adiciona as categorias à lista de exclusão<br>
+                      <b>IncludeViewCount</b> - Define se carregará o número da quantidade total de artigos<br>
+                      <b>Offset</b> - Define quantos artigos serão pulados<br>
+                      <b>CountVar</b> - Define quantos artigos totais serão carregados (para paginação)
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -739,19 +741,34 @@
 
           <section>
             <h2 id="mw_article">Article</h2>
-            <p>Um article pode ser um <b>module</b>, uma <b>page</b> ou até estar direto no <b>template</b>, apesar de usarmos, por padrão, como um <b>module</b>. Em articles é comum usarmos as tags <code>&lt;mw:property value=""/&gt;</code> para chamarmos itens das matérias e <code>&lt;mw:applyTemplate path=""/&gt;</code> para inserirmos modules externos. No article nós costumamos chamar o título da matéria, por exemplo: <code>&lt;mw:property value="article.header"/&gt;</code>.</p>
+            <p>Um article pode ser um <b>module</b>, uma <b>page</b> ou até estar direto no <b>template</b>, apesar de
+              usarmos, por padrão, como um <b>module</b>. Em articles é comum usarmos as tags <code>&lt;mw:property
+                value=""/&gt;</code> para chamarmos itens das matérias e <code>&lt;mw:applyTemplate path=""/&gt;</code>
+              para inserirmos modules externos. No article nós costumamos chamar o título da matéria, por exemplo:
+              <code>&lt;mw:property value="article.header"/&gt;</code>.</p>
 
-            <h5>Título da matéria</h5>
-            <span><code>&lt;mw:property value="article.header"/&gt;</code></span>
-
-            <h5>Linha fina</h5>
-            <span><code>&lt;mw:property value="article.leadHtml"/&gt;</code></span>
-
-            <h5>Última atualização</h5>
-            <span><code>&lt;mw:property value="article.versionDate" format="dd/MM/yyyy',' HH:mm"/&gt;</code></span>
-            
-            <h5>Autor</h5>
-            <span><code>&lt;mw:property value="article.author"/&gt;</code></span>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Título da matéria</td>
+                    <td><code>&lt;mw:property value="article.header"/&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Linha fina</td>
+                    <td><code>&lt;mw:property value="article.leadHtml"/&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Última atualização</td>
+                    <td><code>&lt;mw:property value="article.versionDate" format="dd/MM/yyyy',' HH:mm"/&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Autor</td>
+                    <td><code>&lt;mw:property value="article.author"/&gt;</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
           <!-- Changelog
 		============================ -->
