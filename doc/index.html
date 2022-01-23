@@ -1,175 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-<link href="assets/images/favicon.png" rel="icon" />
-<title>Criação de um Portal - Mundiware</title>
-<meta name="description" content="Processo de criação de um portal - Mundiware">
-<meta name="author" content="Mundiware">
 
-<!-- Stylesheet
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon" />
+  <title>Criação de um Portal - Mundiware</title>
+  <meta name="description" content="Processo de criação de um portal - Mundiware">
+  <meta name="author" content="Mundiware">
+
+  <!-- Stylesheet
 ============================== -->
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-<!-- Font Awesome Icon -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
-<!-- Magnific Popup -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
-<!-- Highlight Syntax -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
-<!-- Custom Stylesheet -->
-<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
 </head>
 
 <body class="box" data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
 
-<!-- Preloader -->
-<div class="preloader">
-  <div class="lds-ellipsis">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
-<!-- Preloader End --> 
-
-<!-- Document Wrapper   
-=============================== -->
-<div id="main-wrapper"> 
-  
-  <!-- Header
-  ============================ -->
-  <header id="header" class="sticky-top"> 
-    <!-- Navbar -->
-    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
-      <div class="container-fluid">
-        <!-- Sidebar Toggler -->
-		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-		
-		<!-- Logo --> 
-        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png" alt="iDocs Template"/> </a> 
-		<span class="text-2 ml-2">v1.0</span> 
-        <!-- Logo End -->
-        
-		<!-- Navbar Toggler -->
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
-        
-		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="dropdown"> <a class="dropdown-toggle" href="#">Links úteis</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://splidejs.com/">SplideJS</a></li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Portais feitos</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://atarde.com.br">A TARDE</a></li>
-                    <li><a class="dropdown-item" href="https://folhadelondrina.com.br">Folha de Londrina</a></li>
-                    <li><a class="dropdown-item" href="https://tribunaonline.com.br/">Tribuna Online</a></li>
-                    <li><a class="dropdown-item" href="#">Verificar demais</a></li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Adicionar mais</a>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End --> 
-  </header>
-  <!-- Header End --> 
-  
-  <!-- Content
-  ============================ -->
-  <div id="content" role="main">
-    
-	<!-- Sidebar Navigation
-	============================ -->
-	<div class="idocs-navigation bg-light">
-      <ul class="nav flex-column ">
-        <li class="nav-item"><a class="nav-link active" href="#mw_inicio">Início</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#mw_configurandosftp">Configurando SFTP</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#mw_estruturadepastas_section">Estrutura de pastas</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#mw_modules">Modules</a></li>
-            <li class="nav-item"><a class="nav-link" href="#mw_pages">Pages</a></li>
-            <li class="nav-item"><a class="nav-link" href="#mw_templates">Templates</a></li>
-          </ul>
-        </li>
-    <li class="nav-item"><a class="nav-link" href="#mw_responsividade">Responsividade</a>
-      <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#mw_responsivopadrao">Responsivo Padrão</a></li>
-        <li class="nav-item"><a class="nav-link" href="#mw_mobileedesktop">Mobile e Desktop</a></li>
-      </ul></li>
-		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
-			<ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
-          </ul>
-		</li>
-      </ul>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    
-    <!-- Docs Content
-	============================ -->
-    <div class="idocs-content">
-      <div class="container"> 
-        
-        <!-- Getting Started
-		============================ -->
-        <section id="mw_inicio">
-        <h1>Inicio</h1>
-        <h2>Documentação para fins de consulta e conhecimento sobre como elaborar um projeto de portal com os conceitos da Mundiware.</h2>
-        <p class="lead">Em constante atualização.</p>
-		<hr>
-		<div class="row">
-			<div class="col-sm-6 col-lg-4">
-				<ul class="list-unstyled">
-					<li><strong>Versão:</strong> 1.0</li>
-					<li><strong>Autor:</strong> <a href="https://mundiware.com" target="_blank">Mundiware</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-6 col-lg-4">
-				<ul class="list-unstyled">
-					<li><strong class="font-weight-700">Criado:</strong> 20 de janeiro, 2022</li>
-					<li><strong>Atualizado:</strong> 20 de janeiro, 2022</li>
-				</ul>
-			</div>
-		</div>
-        <p class="alert alert-info">Se você tiver alguma dúvida que esteja além do escopo deste arquivo de ajuda, ou caso tenha uma sugestão/correção para algo aqui informado sinta-se à vontade para procurar um de nossos colaboradores.</p>
-        </section>
-        
-		<hr class="divider">
-		
-        <!-- Installation
-		============================ -->
-        <section id="mw_configurandosftp">
-          <h2>Configurando o ambiente</h2>
-          <p class="lead">Atualmente quando um projeto se inicia, nós utilizamos o SFTP para desenvolvimento inicial.</p>
-          <p>O Secure File Transfer Protocol (SFTP) é um protocolo de transferência segura de dados. Ele é projetado para estabelecer uma conexão entre um servidor de internet particular (ou computador) para que os usuários possam transferir arquivos (download) para o computador ou para o servidor (upload). 
-            <br>
-            O objetivo principal é transferir dados, mas também pode ser utilizado para obter acesso geral ao sistema de arquivos do servidor FTP. O protocolo SFTP é executado em um canal seguro</p>
-          
-          <p>Recomendamos o programa <a href="https://code.visualstudio.com">Visual Studio Code</a> como principal ferramenta de trabalho no tocante ao desenvolvimento front-end de nossos portais, e para que seja possível configurar o ambiente de SFTP precisaremos de uma extensão chamada <b>SFTP</b>, porém há diversas extensões com este nome, a que utilizamos tem como autor: <i>Natizysmkunk</i> <a href="https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp">clique aqui</a> para instalar a extensão em seu programa.</p>
-          
-          <p>Após efetuado a instalação da instalação, para uma documentação mais direta, segue o passo a passo em vídeo de como configurar o ambiente SFTP do Projeto em sua máquina:</p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AE8DGbAbcoM" allowfullscreen></iframe>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png"
+              alt="iDocs Template" /> </a>
+          <span class="text-2 ml-2">v1.0</span>
+          <!-- Logo End -->
+
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="dropdown"> <a class="dropdown-toggle" href="#">Links úteis</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://splidejs.com/">SplideJS</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Portais feitos</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://atarde.com.br">A TARDE</a></li>
+                      <li><a class="dropdown-item" href="https://folhadelondrina.com.br">Folha de Londrina</a></li>
+                      <li><a class="dropdown-item" href="https://tribunaonline.com.br/">Tribuna Online</a></li>
+                      <li><a class="dropdown-item" href="#">Verificar demais</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Adicionar mais</a>
+                </ul>
+              </li>
+            </ul>
           </div>
-            </section>
-        
-		<hr class="divider">
-		
-        <!-- HTML Structure
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+  ============================ -->
+    <div id="content" role="main">
+
+      <!-- Sidebar Navigation
+	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#mw_inicio">Início</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#mw_configurandosftp">Configurando SFTP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#mw_estruturadepastas_section">Estrutura de pastas</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#mw_modules">Modules</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_pages">Pages</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_templates">Templates</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#mw_responsividade">Responsividade</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#mw_responsivopadrao">Responsivo Padrão</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_mobileedesktop">Mobile e Desktop</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Docs Content
+	============================ -->
+      <div class="idocs-content">
+        <div class="container">
+
+          <!-- Getting Started
 		============================ -->
-        <section id="mw_estruturadepastas_section">
-          <h2 id="mw_estruturadepastas">Estruturas de pastas</h2>
-          <p>Após feito a configuração do SFTP, e feito o download dos arquivos do diretório do projeto, por padrão um portal nasce com a seguinte hierarquia de pastas:</p>
-            
+          <section id="mw_inicio">
+            <h1>Inicio</h1>
+            <h2>Documentação para fins de consulta e conhecimento sobre como elaborar um projeto de portal com os
+              conceitos da Mundiware.</h2>
+            <p class="lead">Em constante atualização.</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Versão:</strong> 1.0</li>
+                  <li><strong>Autor:</strong> <a href="https://mundiware.com" target="_blank">Mundiware</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong class="font-weight-700">Criado:</strong> 20 de janeiro, 2022</li>
+                  <li><strong>Atualizado:</strong> 20 de janeiro, 2022</li>
+                </ul>
+              </div>
+            </div>
+            <p class="alert alert-info">Se você tiver alguma dúvida que esteja além do escopo deste arquivo de ajuda, ou
+              caso tenha uma sugestão/correção para algo aqui informado sinta-se à vontade para procurar um de nossos
+              colaboradores.</p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Installation
+		============================ -->
+          <section id="mw_configurandosftp">
+            <h2>Configurando o ambiente</h2>
+            <p class="lead">Atualmente quando um projeto se inicia, nós utilizamos o SFTP para desenvolvimento inicial.
+            </p>
+            <p>O Secure File Transfer Protocol (SFTP) é um protocolo de transferência segura de dados. Ele é projetado
+              para estabelecer uma conexão entre um servidor de internet particular (ou computador) para que os usuários
+              possam transferir arquivos (download) para o computador ou para o servidor (upload).
+              <br>
+              O objetivo principal é transferir dados, mas também pode ser utilizado para obter acesso geral ao sistema
+              de arquivos do servidor FTP. O protocolo SFTP é executado em um canal seguro</p>
+
+            <p>Recomendamos o programa <a href="https://code.visualstudio.com">Visual Studio Code</a> como principal
+              ferramenta de trabalho no tocante ao desenvolvimento front-end de nossos portais, e para que seja possível
+              configurar o ambiente de SFTP precisaremos de uma extensão chamada <b>SFTP</b>, porém há diversas
+              extensões com este nome, a que utilizamos tem como autor: <i>Natizysmkunk</i> <a
+                href="https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp">clique aqui</a> para
+              instalar a extensão em seu programa.</p>
+
+            <p>Após efetuado a instalação da instalação, para uma documentação mais direta, segue o passo a passo em
+              vídeo de como configurar o ambiente SFTP do Projeto em sua máquina:</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AE8DGbAbcoM"
+                allowfullscreen></iframe>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <!-- HTML Structure
+		============================ -->
+          <section id="mw_estruturadepastas_section">
+            <h2 id="mw_estruturadepastas">Estruturas de pastas</h2>
+            <p>Após feito a configuração do SFTP, e feito o download dos arquivos do diretório do projeto, por padrão um
+              portal nasce com a seguinte hierarquia de pastas:</p>
+
             <ul>
               <li><code>assets</code> - Todos os arquivos de: CSS, JavaScript, Imagens, Fonts, Libs.</li>
               <li><code>json</code> - Arquivos JSON para widgets, e demais usos.</li>
@@ -178,94 +198,510 @@
               <li><code>templates</code> - Arquivos para configurações vitais do portal</li>
               <li><code>widgets</code> - Todos os widgets do projeto.</li>
             </ul>
-          <p class="alert alert-info">Este é o conjunto de pastas vitais para o início do projeto, de acordo com as circustâncias pode existir novas pastas para novas funções que venham a ser implementadas.</p>
+            <p class="alert alert-info">Este é o conjunto de pastas vitais para o início do projeto, de acordo com as
+              circustâncias pode existir novas pastas para novas funções que venham a ser implementadas.</p>
 
-          <h3 id="mw_modules">Modules</h3>
-          <p>Pasta dos módulos do site. Os arquivos mais comuns são <b>HeadMetasHome, HomeCSSBundle, Top, Menu, Footer</b> e <b>HomeJSBundle</b>. Os módulos são arquivos externos que podem ser incorporados dentro do template desejado (muito parecido com o comando include do PHP). Todos os arquivos desta pasta devem conter a extensão <code>.module</code></p>
-          <ul>
-            <li><b>Metas</b> - módulo que armazena o XHTML das tags <code>meta</code> da home do site. Também é comum a inclusão da tag <code>title</code> neste arquivo. </li>
-            <li><b>Components</b> - módulo que armazena o XHTML dos componentes vitais do site, como topResponsivo e footerResponsivo. </li>
-            <li><b>Home</b> - módulo que armazena os XHTML da home do site. </li>
-            <li><b>Article</b> - módulo que armazena os XHTML do article do site. Esse é o módulo referente a página de artigo, tendo versões como: <code>articleEspecial</code> e <code>articleAmp</code>. </li>
-            <li><b>Category</b> - módulo que armazena o XHTML da página de categoria do site. Nesse módulo temos chamadas de matérias de cada categoria (ex: política, esportes, cultura). </li>
-          </ul>
+            <h3 id="mw_modules">Modules</h3>
+            <p>Pasta dos módulos do site. Os arquivos mais comuns são <b>HeadMetasHome, HomeCSSBundle, Top, Menu,
+                Footer</b> e <b>HomeJSBundle</b>. Os módulos são arquivos externos que podem ser incorporados dentro do
+              template desejado (muito parecido com o comando include do PHP). Todos os arquivos desta pasta devem
+              conter a extensão <code>.module</code></p>
+            <ul>
+              <li><b>Metas</b> - módulo que armazena o XHTML das tags <code>meta</code> da home do site. Também é comum
+                a inclusão da tag <code>title</code> neste arquivo. </li>
+              <li><b>Components</b> - módulo que armazena o XHTML dos componentes vitais do site, como topResponsivo e
+                footerResponsivo. </li>
+              <li><b>Home</b> - módulo que armazena os XHTML da home do site. </li>
+              <li><b>Article</b> - módulo que armazena os XHTML do article do site. Esse é o módulo referente a página
+                de artigo, tendo versões como: <code>articleEspecial</code> e <code>articleAmp</code>. </li>
+              <li><b>Category</b> - módulo que armazena o XHTML da página de categoria do site. Nesse módulo temos
+                chamadas de matérias de cada categoria (ex: política, esportes, cultura). </li>
+            </ul>
 
-          <h3 id="mw_pages">Pages</h3>
-          <p>Pasta das páginas do site. Seus arquivos funcionam de forma parecida com o template, sendo estes usados preferencialmente para implementação de páginas externas (ex: RSS, Recuperar senha, Publicidade Legal..). Também é possível usá-los como um backup dos templates e/ou criar páginas teste. Todos os arquivos desta pasta devem conter a extensão <code>.page</code>.</p>
-        
-        <h3 id="mw_templates">Templates</h3>
-        <p>Pasta dos templates do site. Contém por padrão os arquivos <b>Home, Category e Articles</b>. Todos os arquivos desta pasta devem conter a extensão <code>.template_tipoDoTemplate</code></p>
-        <ul>
-          <li><b>Home</b> - possui a extensão <code>.template_HOME</code>. É o template que armazena a estrutura da home do site.</li>
-          <li><b>Category</b> - possui a extensão <code>.template_CATEGORY</code>. É o template que armazena a estrutura das categorias do site (ex: política, esportes, cultura).</li>
-          <li><b>Articles</b> - possui a extensão <code>.template_ARTICLE</code>. É o template que armazena a estrutura da página interna do site (matérias).</li>
-        </ul>
-        
-        </section>
+            <h3 id="mw_pages">Pages</h3>
+            <p>Pasta das páginas do site. Seus arquivos funcionam de forma parecida com o template, sendo estes usados
+              preferencialmente para implementação de páginas externas (ex: RSS, Recuperar senha, Publicidade Legal..).
+              Também é possível usá-los como um backup dos templates e/ou criar páginas teste. Todos os arquivos desta
+              pasta devem conter a extensão <code>.page</code>.</p>
 
-        
-		<hr class="divider">
-		
-        <section>
-          <h2 id="mw_responsividade">Responsividade</h2>
-          <p>Antes de iniciarmos a ordem cronológica de etapas para a elaboração do portal, se faz necessário compreendermos o modelo responsivo que iremos aplicar no projeto, atualmente adotamos 2 sistemas, o <code>Responsivo Padrão</code> e o <code>Mobile e Desktop com ?d=1</code>.</p>
+            <h3 id="mw_templates">Templates</h3>
+            <p>Pasta dos templates do site. Contém por padrão os arquivos <b>Home, Category e Articles</b>. Todos os
+              arquivos desta pasta devem conter a extensão <code>.template_tipoDoTemplate</code></p>
+            <ul>
+              <li><b>Home</b> - possui a extensão <code>.template_HOME</code>. É o template que armazena a estrutura da
+                home do site.</li>
+              <li><b>Category</b> - possui a extensão <code>.template_CATEGORY</code>. É o template que armazena a
+                estrutura das categorias do site (ex: política, esportes, cultura).</li>
+              <li><b>Articles</b> - possui a extensão <code>.template_ARTICLE</code>. É o template que armazena a
+                estrutura da página interna do site (matérias).</li>
+            </ul>
 
-          <h3 id="mw_responsivopadrao">Responsivo Padrão</h3>
-          <p>Quando seguimos este modelo de responsividade, o modo como os elementos serão tratados fica bastante claro, uma vez que o objetivo inicial principal é fazer com que todos os elementos sejam responsivos em todas as telas, como apresentado na ilustração abaixo:</p>
-          <img src="./assets/images/responsivo-animacao1.gif" alt="responsividade">
+          </section>
 
-          <p>Na prática, o design responsivo é o design que responde ao contexto do usuário. Se o usuário acessar pelo celular, por exemplo, os blocos de conteúdo são reposicionados para facilitar a leitura e os botões e fontes ficam maiores para facilitar o clique, isso acontece para que usuário tenha a melhor experiência de uso possível, independente da tela.</p>
 
-          <h3 id="mw_mobileedesktop">Mobile e Desktop com ?d=1</h3>
-          <p>Quando seguimos no caminho de ser feito modelo para desktop e mobile, não se foge muito do principio de responsividade convencional, ainda a aplicamos, porém, utilizando breakpoints específicos. No modo <b>desktop</b> utilizamos <code>max-width</code> de 1200px, e levamos o layout até <code>min-width:</code> 1000px. E a partir dai utilizamos Media Queries a partir dos 700px, para ajustar o elementos do portal para a versão mobile.</p>
+          <hr class="divider">
 
-          <h3 id="mw_redirectmodule">redirect.module</h3>
-          <p>Este módulo é responsável por fazer a verificação se o usuário está acessando o portal através de um dispositivo mobile ou não, após feita a checagem direciona ele para a versão respectiva, é um módulo indispensável na aplicação da responsividade. É fácil localizado em <code>/modules/redirect.module</code>.</p>
+          <section>
+            <h2 id="mw_responsividade">Responsividade</h2>
+            <p>Antes de iniciarmos a ordem cronológica de etapas para a elaboração do portal, se faz necessário
+              compreendermos o modelo responsivo que iremos aplicar no projeto, atualmente adotamos 2 sistemas, o
+              <code>Responsivo Padrão</code> e o <code>Mobile e Desktop com ?d=1</code>.</p>
 
-        </section>
-		 
-        <!-- Changelog
+            <h3 id="mw_responsivopadrao">Responsivo Padrão</h3>
+            <p>Quando seguimos este modelo de responsividade, o modo como os elementos serão tratados fica bastante
+              claro, uma vez que o objetivo inicial principal é fazer com que todos os elementos sejam responsivos em
+              todas as telas, como apresentado na ilustração abaixo:</p>
+            <img src="./assets/images/responsivo-animacao1.gif" alt="responsividade">
+
+            <p>Na prática, o design responsivo é o design que responde ao contexto do usuário. Se o usuário acessar pelo
+              celular, por exemplo, os blocos de conteúdo são reposicionados para facilitar a leitura e os botões e
+              fontes ficam maiores para facilitar o clique, isso acontece para que usuário tenha a melhor experiência de
+              uso possível, independente da tela.</p>
+
+            <h3 id="mw_mobileedesktop">Mobile e Desktop com ?d=1</h3>
+            <p>Quando seguimos no caminho de ser feito modelo para desktop e mobile, não se foge muito do principio de
+              responsividade convencional, ainda a aplicamos, porém, utilizando breakpoints específicos. No modo
+              <b>desktop</b> utilizamos <code>max-width</code> de 1200px, e levamos o layout até <code>min-width:</code>
+              1000px. E a partir dai utilizamos Media Queries a partir dos 700px, para ajustar o elementos do portal
+              para a versão mobile.</p>
+
+            <h3 id="mw_redirectmodule">redirect.module</h3>
+            <p>Este módulo é responsável por fazer a verificação se o usuário está acessando o portal através de um
+              dispositivo mobile ou não, após feita a checagem direciona ele para a versão respectiva, é um módulo
+              indispensável na aplicação da responsividade. É fácil localizado em <code>/modules/redirect.module</code>.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+          <section>
+            <h2 id="mw_mwtpl">MWTPL</h2>
+            <p>Em um portal desenvolvido pela Mundiware utilizamos a MWTPL, um conjunto de tags próprias para a implementação do conteúdo nas páginas do site, seu uso correto é primordial para o funcionamento do online. Todas as tags da Mundiware deverão ser colocadas sempre ao chamar um conteúdo externo, seja ele folha de estilos, imagens, javascript e, é claro, o conteúdo localizado no banco de dados.</p>
+
+            <h1 id="linguagem-tags" class="page-header">Tags</h1>
+							<p class="lead mw-pad-b-15">Todas as tags devem iniciar sua nomenclatura com <b>mw:</b> na frente (ex: <code>&lt;mw:nomeDaTag&gt;</code>…<code>&lt;/mw:nomeDaTag&gt;</code>).
+							Todas as tags possuem propriedades.
+							Não há diferenciação entre maiúsculas e minúsculas (ex: <code>&lt;MW:nomedatag&gt;</code>…<code>&lt;/mw:NOMEdaTag&gt;</code>).</p>
+							
+						<h2 id="set">&lt;mw:set/&gt;</h2>
+							<p class="mw-pad-b-15">Usada para criar uma variável e armazenar algo nela.</p>
+								<table class="table table-bordered table-striped">
+									<thead>
+									  <tr>
+										<th width="35%">Características</th>
+										<th width="30%">Atributos</th>
+										<th width="35%">Descrição</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr class="active">
+										<td>- Tag sem conteúdo</td>
+										<td>var, value</td>
+										<td>
+										<b>var</b> - cria uma variável<br/>
+										<b>value</b> - define o valor da variável
+										</td>
+									  </tr>
+									  
+									</tbody>
+								</table>
+								<h4 class="mw-pad-b-5">Exemplo:</h4>
+								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:set</span> <span class="na">var=</span><span class="s">"excluirCategorias"</span> <span class="na">value=</span><span class="s">"list('Nome da categoria1', 'Nome da categoria2')"</span><span class="nt">/&gt;</span></code></pre></figure>
+									
+								
+						<h2 class="mw-pad-t-15" id="loadArticles">&lt;mw:loadArticles/&gt;</h2>
+							<p class="mw-pad-b-15">Usada para carregar as matérias de uma determinada editoria.</p>
+								<table class="table table-bordered table-striped">
+									<thead>
+									  <tr>
+										<th width="35%">Características</th>
+										<th width="30%">Atributos</th>
+										<th width="35%">Descrição</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr class="active">
+										<td>- Tag sem conteúdo<br/>- Implementada preferencialmente antes da tag <code>&lt;html&gt;</code></td>
+										<td>var, amount, categoryName, includeText, withSpecialImages, addToExclusionLists, exclusionLists, excludeCategoriesByNames, articleId, loadImages, loadSpecialImages, categoryId, includeViewCount, loadThumbnails, offset, countVar</td>
+										<td>
+										<b>var</b> - cria uma variável<br/>
+										<b>amount</b> - define a quantidade de artigos que será carregado<br/>
+										<b>categoryName</b> - define de qual categoria será carregado os artigos através do nome<br/>
+										<b>categoryId</b> - define de qual categoria será carregado os artigos através do ID<br/>
+										<b>articleId</b> - define <u>um</u> artigo específico pelo ID<br/>
+										<b>includeText</b> - define se carregará o texto dos artigos<br/>
+										<b>withSpecialImages</b> - define que imagens especiais dos artigos será carregada<br/>
+										<b>loadImages</b> - define se carregará todas as imagens de uma determinada categoria<br/>
+										<b>loadSpecialImages</b> - define que imagens especiais dos artigos será carregada<br/>
+										<b>loadThumbnails</b> - define se carregará as thumbnails das imagens<br/>
+										<b>addToExclusionLists</b> - adiciona os artigos à lista de exclusão<br/>
+										<b>exclusionLists</b> - lista de exclusão no qual não deixa repetir o mesmo artigo da categoria nos resultados de busca<br/>
+										<b>excludeCategoriesByNames</b> - adiciona as categorias à lista de exclusão<br/>
+										<b>includeViewCount</b> - define se carregará o número da quantidade total de artigos<br/>
+										<b>offset</b> - define quantos artigos serão pulados<br/>
+										<b>countVar</b> - define quantos artigos totais serão carregados (para paginação)
+										</td>
+									  </tr>
+									  
+									</tbody>
+								</table>
+								<h4 class="mw-pad-b-5">Exemplo1:</h4>
+								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"ArtigosCategoria"</span> <span class="na">categoryName=</span><span class="s">" 'Nome da categoria1', 'Nome da categoria2' "</span> <span class="na">amount=</span><span class="s">"3"</span> <span class="na">includeText=</span><span class="s">"true"</span> <span class="na">withSpecialImages=</span><span class="s">"list ('tipoDaImagem')"</span><span class="nt">/&gt;</span></code></pre></figure>
+								<h4 class="mw-pad-b-5">Exemplo2:</h4>
+								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"articleInfo"</span> <span class="na">articleId=</span><span class="s">"article.articleId"</span> <span class="na">loadImages=</span><span class="s">"false"</span> <span class="na">loadSpecialImages=</span><span class="s">"list('COVER')"</span><span class="nt">/&gt;</span></code></pre></figure>
+								<h4 class="mw-pad-b-5">Exemplo3:</h4>
+								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"searchedNews"</span> <span class="na">loadImages=</span><span class="s">"true"</span> <span class="na">loadSpecialImages=</span><span class="s">"list('Cover')"</span> <span class="na">SearchedValue=</span><span class="s">"search"</span> <span class="na">offset=</span><span class="s">"0"</span> <span class="na">amount=</span><span class="s">"pageSize"</span> <span class="na">countVar=</span><span class="s">"articlesCount"</span><span class="nt">/&gt;</span></code></pre></figure>
+								
+							
+						
+							
+							
+								<h2 id="applyTemplate" class="mw-pad-t-15">&lt;mw:applyTemplate/&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para aplicar um módulo, template ou page.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag sem conteúdo</td>
+											<td>path</td>
+											<td>
+											<b>path</b> - chama um template, módulo ou page pelo seu diretório
+											</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:applyTemplate</span> <span class="na">path=</span><span class="s">"modules/nomeDoModulo.module"</span><span class="nt">/&gt;</span></code></pre></figure>
+							
+							
+								<h2 id="iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para criar uma repetição de conteúdo.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com conteúdo</td>
+											<td>value, var, limit, offset, index</td>
+											<td>
+											<b>value</b> - insere o valor de uma variável já declarada anteriormente<br/>
+											<b>var</b> - cria uma variável local<br/>
+											<b>limit</b> - define quantos artigos serão mostrados<br/>
+											<b>offset</b> - define quantos artigos serão pulados<br/>
+											<b>index</b> - 
+											</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;iterator</span> <span class="na">value=</span><span class="s">"ArticoManchete"</span> <span class="na">var=</span><span class="s">"article"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/iterator&gt;</span></code></pre></figure>
+									
+							
+							
+								<h2 id="url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada em todas as urls que fazem ligação com os arquivos do site e conteúdos do banco de dados.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com ou sem conteúdo<br/>- Pode ser usada dentro de outra tag HTML</td>
+											<td>value, path</td>
+											<td>
+											<b>value</b> - faz o caminho todo da URL<br/>
+											<b>path</b> - faz o caminho somente da raiz do site
+											</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo1:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url('&lt;mw:Url value='imageArticle.path'/&gt;')"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/div&gt;</span></code></pre></figure>
+									
+									<h4 class="mw-pad-b-5">Exemplo2:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;mw:Url path='~/'/&gt;&lt;mw:property value='categoryInfo.name'/&gt;"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/a&gt;</span></code></pre></figure>
+									
+							
+							
+								<h2 id="property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h2>
+							
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para imprimir algum conteúdo do banco de dados.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag sem conteúdo<br/>- Pode ser usada dentro de outra tag HTML</td>
+											<td>value, format, length</td>
+											<td>
+											<b>value</b> - define o conteúdo que será inserido<br/>
+											<b>format</b> - define formato de data e hora<br/>
+											<b>length</b> - limita a quantidade de caracteres a ser mostrado
+											</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo1:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.header"</span><span class="nt">/&gt;</span></code></pre></figure>
+									
+									<h4 class="mw-pad-b-5">Exemplo2:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.publishDate"</span> <span class="na">format=</span><span class="s">"HH:mm'h' dd/MM/yyyy"</span><span class="nt">/&gt;</span></code></pre></figure>
+									
+									<h4 class="mw-pad-b-5">Exemplo3:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.safeLead"</span> <span class="na">length=</span><span class="s">"100"</span><span class="nt">/&gt;</span></code></pre></figure>
+							
+							
+								<h2 id="if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h2>
+								
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para a criação de uma condição e sua aplicação caso for verdadeira.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com conteúdo</td>
+											<td>test</td>
+											<td><b>test</b> - insere a condição que deseja criar</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo1:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"!isEmpty(article.author)"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre></figure>
+									
+									<h4 class="mw-pad-b-5">Exemplo2:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.publishDate != article.versionDate"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre></figure>
+									
+									<h4 class="mw-pad-b-5">Exemplo3:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size &gt; 0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre></figure>
+									
+							
+							
+								<h2 id="else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com conteúdo<br/>- Tag sem atributos<br/>- Está relacionada com a tag <code>&lt;mw:if&gt;</code></td>
+											<td></td>
+											<td></td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size gt 1"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span><br/><span class="nt">&lt;mw:else&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:else&gt;</span></code></pre></figure>
+									
+								
+							
+								<h2 id="elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa e criando uma nova condição.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com conteúdo<br/>- Está relacionada com a tag <code>&lt;mw:if&gt;</code></td>
+											<td>test</td>
+											<td><b>test</b> - insere a condição que deseja criar</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size&gt;0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span><br/><span class="nt">&lt;mw:elseIf</span> <span class="na">test=</span><span class="s">"article.allImages.size&gt;0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:elseIf&gt;</span></code></pre></figure>
+									
+							
+							
+								<h2 id="renderStyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com conteúdo</td>
+											<td>makeBundle</td>
+											<td><b>makeBundle</b> - permite ou nega a compactação do conteúdo num bundle</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderStyles</span> <span class="na">makeBundle=</span><span class="s">"true"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderStyles&gt;</span></code></pre></figure>
+									
+								<h2 id="renderScripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag com conteúdo</td>
+											<td>makeBundle</td>
+											<td><b>makeBundle</b> - permite ou nega a compactação do conteúdo num bundle</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderScripts</span> <span class="na">makeBundle=</span><span class="s">"false"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderScripts&gt;</span></code></pre></figure>
+							
+							
+								<h2 id="param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h2>
+									<p class="mw-pad-b-15 mw-pad-t-5">Usada para chamar um CSS ou JavaScript externos.</p>
+									
+									<table class="table table-bordered table-striped">
+										<thead>
+										  <tr>
+											<th width="35%">Características</th>
+											<th width="30%">Atributos</th>
+											<th width="35%">Descrição</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr class="active">
+											<td>- Tag sem conteúdo<br/>- Está relacionada com as tags <code>&lt;mw:renderStyles&gt;</code> e <code>&lt;mw:renderScripts&gt;</code></td>
+											<td>value</td>
+											<td>
+											<b>value</b> - define o caminho do css ou javascript
+											</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+									<h4 class="mw-pad-b-5">Exemplo:</h4>
+									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:param</span> <span class="na">value=</span><span class="s">"js/bootstrap.min.js"</span><span class="nt">/&gt;</span></code></pre></figure>
+									
+							
+						
+          </section>
+          <!-- Changelog
 		============================ -->
-		
-        <section id="idocs_changelog">
-          <h2>Changelog</h2>
-		  <p class="alert alert-info mb-5">Veja o que há de novo adicionado, alterado, corrigido, aprimorado ou atualizado nas versões mais recentes.</p>
-		  
-		  <hr class="divider">
-		  
-          <h3 id="v1-0">Version 1.0 <small class="text-muted">(20 de janeiro, 2022)</small></h3>
-          <p>Documentação em desenvolvimento</p>
-          <ul class="changelog">
-            <li><span class="badge badge-success">Adicionado</span></li>
-			<li><span class="badge badge-danger">Corrigido</span></li>
-			<li><span class="badge badge-info">Atualizado</span></li>
-          </ul>
-        </section>        
-        
+
+          <section id="idocs_changelog">
+            <h2>Changelog</h2>
+            <p class="alert alert-info mb-5">Veja o que há de novo adicionado, alterado, corrigido, aprimorado ou
+              atualizado nas versões mais recentes.</p>
+
+            <hr class="divider">
+
+            <h3 id="v1-0">Version 1.0 <small class="text-muted">(20 de janeiro, 2022)</small></h3>
+            <p>Documentação em desenvolvimento</p>
+            <ul class="changelog">
+              <li><span class="badge badge-success">Adicionado</span></li>
+              <li><span class="badge badge-danger">Corrigido</span></li>
+              <li><span class="badge badge-info">Atualizado</span></li>
+            </ul>
+          </section>
+
+        </div>
       </div>
+
     </div>
-	
+    <!-- Content end -->
+
+
   </div>
-  <!-- Content end --> 
-  
-  
-</div>
-<!-- Document Wrapper end --> 
+  <!-- Document Wrapper end -->
 
-<!-- Back To Top --> 
-<a id="back-to-top" data-toggle="tooltip" title="Voltar ao topo" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Voltar ao topo" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
 
-<!-- JavaScript
+  <!-- JavaScript
 ============================ -->
-<script src="assets/vendor/jquery/jquery.min.js"></script> 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-<!-- Highlight JS -->
-<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
-<!-- Easing --> 
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
-<!-- Magnific Popup --> 
-<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
-<!-- Custom Script -->
-<script src="assets/js/theme.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
 </body>
+
 </html>
