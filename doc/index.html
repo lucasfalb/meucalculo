@@ -111,6 +111,20 @@
               <li class="nav-item"><a class="nav-link" href="#mw_mobileedesktop">Mobile e Desktop</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="#mw_responsividade">MWTPL</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#mw_responsivopadrao">Tags</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_set">&lt;mw:set/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_loadarticles">&lt;mw:loadArticles/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_iterator">&lt;mw:iterator/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_property">&lt;mw:property/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_else">&lt;mw:else/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_elseif">&lt;mw:elseIf/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_renderstyles">&lt;mw:renderStyles/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_renderscripts">&lt;mw:renderScripts/&gt;</a></li>
+              <li class="nav-item"><a class="nav-link" href="#mw_param">&lt;mw:param/&gt;</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
@@ -287,14 +301,14 @@
               desenvolvimento de um portal, se faz necessário entendermos a aplicação e sintaxe da MWTPL.
             </div>
 
-            <h3 id="linguagem-tags" class="page-header">Tags</h3>
+            <h3 id="mw_tags" class="page-header">Tags</h3>
             <p class="lead mw-pad-b-15">Todas as tags devem iniciar sua nomenclatura com <b>mw:</b> na frente (ex:
               <code>&lt;mw:nomeDaTag&gt;</code>…<code>&lt;/mw:nomeDaTag&gt;</code>).
               Todas as tags possuem propriedades.
               Não há diferenciação entre maiúsculas e minúsculas (ex:
               <code>&lt;MW:nomedatag&gt;</code>…<code>&lt;/mw:NOMEdaTag&gt;</code>).</p>
 
-            <h3 id="set">&lt;mw:set/&gt;</h3>
+            <h3 id="mw_set">&lt;mw:set/&gt;</h3>
             <p class="mw-pad-b-15">Usada para criar uma variável e armazenar algo nela.</p>
             <table class="table table-bordered table-striped">
               <thead>
@@ -323,7 +337,7 @@
             </figure>
 
 
-            <h3 class="mw-pad-t-15" id="loadArticles">&lt;mw:loadArticles/&gt;</h3>
+            <h3 class="mw-pad-t-15" id="mw_loadarticles">&lt;mw:loadArticles/&gt;</h3>
             <p class="mw-pad-b-15">Usada para carregar as matérias de uma determinada editoria.</p>
 
             <div class="table-responsive">
@@ -386,7 +400,7 @@
 
 
 
-            <h2 id="applyTemplate" class="mw-pad-t-15">&lt;mw:applyTemplate/&gt;</h2>
+            <h2 id="mw_applytemplate" class="mw-pad-t-15">&lt;mw:applyTemplate/&gt;</h2>
             <p class="mw-pad-b-15 mw-pad-t-5">Usada para aplicar um módulo, template ou page.</p>
 
             <table class="table table-bordered table-striped">
@@ -415,7 +429,7 @@
             </figure>
 
 
-            <h3 id="iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h3>
+            <h3 id="mw_iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h3>
             <p class="mw-pad-b-15 mw-pad-t-5">Usada para criar uma repetição de conteúdo.</p>
 
             <table class="table table-bordered table-striped">
@@ -450,7 +464,7 @@
 
 
 
-            <h3 id="url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h3>
+            <h3 id="mw_url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h3>
             <p class="mw-pad-b-15 mw-pad-t-5">Usada em todas as urls que fazem ligação com os arquivos do site e
               conteúdos do banco de dados.</p>
 
@@ -488,7 +502,7 @@
 
 
 
-            <h3 id="property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h3>
+            <h3 id="mw_property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h3>
 
             <p class="mw-pad-b-15 mw-pad-t-5">Usada para imprimir algum conteúdo do banco de dados.</p>
 
@@ -532,7 +546,7 @@
             </figure>
 
 
-            <h3 id="if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h3>
+            <h3 id="mw_if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h3>
 
             <p class="mw-pad-b-15 mw-pad-t-5">Usada para a criação de uma condição e sua aplicação caso for verdadeira.
             </p>
@@ -574,7 +588,7 @@
 
 
 
-            <h3 id="else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h3>
+            <h3 id="mw_else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h3>
             <p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa.</p>
 
             <table class="table table-bordered table-striped">
@@ -603,7 +617,7 @@
 
 
 
-            <h3 id="elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h3>
+            <h3 id="mw_elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h3>
             <p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa e criando
               uma nova condição.</p>
 
@@ -632,7 +646,7 @@
 
 
 
-            <h3 id="renderStyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h3>
+            <h3 id="mw_renderstyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h3>
             <p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
 
             <table class="table table-bordered table-striped">
@@ -658,7 +672,7 @@
                 class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderStyles</span> <span class="na">makeBundle=</span><span class="s">"true"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderStyles&gt;</span></code></pre>
             </figure>
 
-            <h2 id="renderScripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h3>
+            <h2 id="mw_renderscripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h3>
               <p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
 
               <table class="table table-bordered table-striped">
@@ -685,7 +699,7 @@
               </figure>
 
 
-              <h3 id="param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h3>
+              <h3 id="mw_param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h3>
               <p class="mw-pad-b-15 mw-pad-t-5">Usada para chamar um CSS ou JavaScript externos.</p>
 
               <table class="table table-bordered table-striped">
