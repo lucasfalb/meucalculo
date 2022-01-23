@@ -277,445 +277,469 @@
 
           <section>
             <h2 id="mw_mwtpl">MWTPL</h2>
-            <p>Em um portal desenvolvido pela Mundiware utilizamos a MWTPL, um conjunto de tags próprias para a implementação do conteúdo nas páginas do site, seu uso correto é primordial para o funcionamento do online. Todas as tags da Mundiware deverão ser colocadas sempre ao chamar um conteúdo externo, seja ele folha de estilos, imagens, javascript e, é claro, o conteúdo localizado no banco de dados.</p>
+            <p>Em um portal desenvolvido pela Mundiware utilizamos a MWTPL, um conjunto de tags próprias para a
+              implementação do conteúdo nas páginas do site, seu uso correto é primordial para o funcionamento do
+              online. Todas as tags da Mundiware deverão ser colocadas sempre ao chamar um conteúdo externo, seja ele
+              folha de estilos, imagens, javascript e, é claro, o conteúdo localizado no banco de dados.</p>
 
             <div class="alert alert-warning">
-            <span class="badge badge-danger text-uppercase">ATENÇÃO:</span> Para seguirmos adiante com a ordem do desenvolvimento de um portal, se faz necessário entendermos a aplicação e sintaxe da MWTPL.
+              <span class="badge badge-danger text-uppercase">ATENÇÃO:</span> Para seguirmos adiante com a ordem do
+              desenvolvimento de um portal, se faz necessário entendermos a aplicação e sintaxe da MWTPL.
             </div>
 
             <h3 id="linguagem-tags" class="page-header">Tags</h3>
-							<p class="lead mw-pad-b-15">Todas as tags devem iniciar sua nomenclatura com <b>mw:</b> na frente (ex: <code>&lt;mw:nomeDaTag&gt;</code>…<code>&lt;/mw:nomeDaTag&gt;</code>).
-							Todas as tags possuem propriedades.
-							Não há diferenciação entre maiúsculas e minúsculas (ex: <code>&lt;MW:nomedatag&gt;</code>…<code>&lt;/mw:NOMEdaTag&gt;</code>).</p>
-							
-						<h3 id="set">&lt;mw:set/&gt;</h3>
-							<p class="mw-pad-b-15">Usada para criar uma variável e armazenar algo nela.</p>
-								<table class="table table-bordered table-striped">
-									<thead>
-									  <tr>
-										<th width="35%">Características</th>
-										<th width="30%">Atributos</th>
-										<th width="35%">Descrição</th>
-									  </tr>
-									</thead>
-									<tbody>
-									  <tr class="active">
-										<td>- Tag sem conteúdo</td>
-										<td>var, value</td>
-										<td>
-										<b>var</b> - cria uma variável<br/>
-										<b>value</b> - define o valor da variável
-										</td>
-									  </tr>
-									  
-									</tbody>
-								</table>
-								<h4 class="mw-pad-b-5">Exemplo:</h4>
-								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:set</span> <span class="na">var=</span><span class="s">"excluirCategorias"</span> <span class="na">value=</span><span class="s">"list('Nome da categoria1', 'Nome da categoria2')"</span><span class="nt">/&gt;</span></code></pre></figure>
-									
-								
-						<h3 class="mw-pad-t-15" id="loadArticles">&lt;mw:loadArticles/&gt;</h3>
-							<p class="mw-pad-b-15">Usada para carregar as matérias de uma determinada editoria.</p>
+            <p class="lead mw-pad-b-15">Todas as tags devem iniciar sua nomenclatura com <b>mw:</b> na frente (ex:
+              <code>&lt;mw:nomeDaTag&gt;</code>…<code>&lt;/mw:nomeDaTag&gt;</code>).
+              Todas as tags possuem propriedades.
+              Não há diferenciação entre maiúsculas e minúsculas (ex:
+              <code>&lt;MW:nomedatag&gt;</code>…<code>&lt;/mw:NOMEdaTag&gt;</code>).</p>
 
-              <div class="table-responsive">
-                <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Características</th>
-                <th>Atributos</th>
-                <th>Descrição</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Default (Dark)</td>
-                <td>Default Social Icon with Dark Color</td>
-                <td><pre class="mb-0"><code class="hljs csharp">&lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"social-icons"</span>&gt;
-            .......
-          &lt;/ul&gt;</code></pre></td>
-              </tr>
-              <tr>
-                <td><code>.social-icons-light</code></td>
-                <td>Social Icon with Light Color</td>
-                <td><pre class="mb-0"><code class="hljs csharp">&lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"social-icons social-icons-light"</span>&gt;
-            .......
-          &lt;/ul&gt;</code></pre></td>
-              </tr>
-            <tr>
-                <td><code>.social-icons-muted</code></td>
-                <td>Social Icon with Muted Color</td>
-                <td><pre class="mb-0"><code class="hljs csharp">&lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"social-icons social-icons-muted"</span>&gt;
-            .......
-          &lt;/ul&gt;</code></pre></td>
-              </tr>
-            <tr>
-                <td><code>.social-icons-sm</code></td>
-                <td>Social Icon with Small Icon Size</td>
-                <td>
-              <pre class="mb-0"><code class="hljs csharp">&lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"social-icons social-icons-sm"</span>&gt;
+            <h3 id="set">&lt;mw:set/&gt;</h3>
+            <p class="mw-pad-b-15">Usada para criar uma variável e armazenar algo nela.</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag sem conteúdo</td>
+                  <td>var, value</td>
+                  <td>
+                    <b>var</b> - cria uma variável<br />
+                    <b>value</b> - define o valor da variável
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:set</span> <span class="na">var=</span><span class="s">"excluirCategorias"</span> <span class="na">value=</span><span class="s">"list('Nome da categoria1', 'Nome da categoria2')"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+
+
+            <h3 class="mw-pad-t-15" id="loadArticles">&lt;mw:loadArticles/&gt;</h3>
+            <p class="mw-pad-b-15">Usada para carregar as matérias de uma determinada editoria.</p>
+
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Características</th>
+                    <th>Atributos</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>- Tag sem conteúdo<br />- Implementada preferencialmente antes da tag <code>&lt;html&gt;</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.social-icons-light</code></td>
+                    <td>Social Icon with Light Color</td>
+                    <td>
+                      <pre class="mb-0"><code class="hljs csharp">&lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"social-icons social-icons-light"</span>&gt;
             .......
           &lt;/ul&gt;</code></pre>
-              </td>
-              </tr>
-            <tr>
-                <td><code>.social-icons-lg</code></td>
-                <td>Social Icon with Large Icon Size</td>
-                <td><pre class="mb-0"><code class="hljs csharp">&lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"social-icons social-icons-lg"</span>&gt;
-            .......
-          &lt;/ul&gt;</code></pre></td>
-              </tr>
-              
-            </tbody>
-          </table>
-          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>var</td>
+                    <td>amount</td>
+                    <td> categoryName</td>
+                    <td>includeText</td>
+                    <td>withSpecialImages</td>
+                    <td> addToExclusionLists</td>
+                    <td> exclusionLists</td>
+                    <td> excludeCategoriesByNames</td>
+                    <td>articleId</td>
+                    <td>loadImages</td>
+                    <td>loadSpecialImages</td>
+                    <td>categoryId</td>
+                    <td> includeViewCount</td>
+                    <td>loadThumbnails</td>
+                    <td> offset </td>
+                    <td> countVar</td>
+                  </tr>
+                  <tr>
+                    <td><b>var</b> - cria uma variável</td>
+                    <td><b>amount</b> - define a quantidade de artigos que será carregado</td>
+                    <td><b>categoryName</b> - define de qual categoria será carregado os artigos através do Nome</td>
+                    <td><b>categoryId</b> - define de qual categoria será carregado os artigos através do ID</td>
+                    <td><b>articleId</b> - define <u>um</u> artigo específico pelo ID</td>
+                    <td><b>includeText</b> - define se carregará o texto dos artigos</td>
+                    <td><b>withSpecialImages</b> - define que imagens especiais dos artigos será carregada</td>
+                    <td><b>loadImages</b> - define se carregará todas as imagens de uma determinada categoria</td>
+                    <td><b>loadSpecialImages</b> - define que imagens especiais dos artigos será carregada</td>
+                    <td><b>loadThumbnails</b> - define se carregará as thumbnails das imagens</td>
+                    <td><b>addToExclusionLists</b> - adiciona os artigos à lista de exclusão</td>
+                    <td><b>exclusionLists</b> - lista de exclusão no qual não deixa repetir o mesmo artigo da categoria
+                      nos resultados de busca</td>
+                    <td><b>excludeCategoriesByNames</b> - adiciona as categorias à lista de exclusão</td>
+                    <td><b>includeViewCount</b> - define se carregará o número da quantidade total de artigos</td>
+                    <td><b>offset</b> - define quantos artigos serão pulados</td>
+                    <td><b>countVar</b> - define quantos artigos totais serão carregados (para paginação)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-              <div class="table-responsive">
+            <h4 class="mw-pad-b-5">Exemplo1:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"ArtigosCategoria"</span> <span class="na">categoryName=</span><span class="s">" 'Nome da categoria1', 'Nome da categoria2' "</span> <span class="na">amount=</span><span class="s">"3"</span> <span class="na">includeText=</span><span class="s">"true"</span> <span class="na">withSpecialImages=</span><span class="s">"list ('tipoDaImagem')"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+            <h4 class="mw-pad-b-5">Exemplo2:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"articleInfo"</span> <span class="na">articleId=</span><span class="s">"article.articleId"</span> <span class="na">loadImages=</span><span class="s">"false"</span> <span class="na">loadSpecialImages=</span><span class="s">"list('COVER')"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+            <h4 class="mw-pad-b-5">Exemplo3:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"searchedNews"</span> <span class="na">loadImages=</span><span class="s">"true"</span> <span class="na">loadSpecialImages=</span><span class="s">"list('Cover')"</span> <span class="na">SearchedValue=</span><span class="s">"search"</span> <span class="na">offset=</span><span class="s">"0"</span> <span class="na">amount=</span><span class="s">"pageSize"</span> <span class="na">countVar=</span><span class="s">"articlesCount"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
 
-              </div>
-								<table class="table table-bordered">
-									<thead>
-									  <tr>
-										<th>Características</th>
-										<th>Atributos</th>
-										<th>Descrição</th>
-									  </tr>
-									</thead>
-									<tbody>
-									  <tr class="active">
-										<td>- Tag sem conteúdo<br/>- Implementada preferencialmente antes da tag <code>&lt;html&gt;</code></td>
-										<td>var, amount, categoryName, includeText, withSpecialImages, addToExclusionLists, exclusionLists, excludeCategoriesByNames, articleId, loadImages, loadSpecialImages, categoryId, includeViewCount, loadThumbnails, offset, countVar</td>
-										<td>
-										<b>var</b> - cria uma variável<br/>
-										<b>amount</b> - define a quantidade de artigos que será carregado<br/>
-										<b>categoryName</b> - define de qual categoria será carregado os artigos através do nome<br/>
-										<b>categoryId</b> - define de qual categoria será carregado os artigos através do ID<br/>
-										<b>articleId</b> - define <u>um</u> artigo específico pelo ID<br/>
-										<b>includeText</b> - define se carregará o texto dos artigos<br/>
-										<b>withSpecialImages</b> - define que imagens especiais dos artigos será carregada<br/>
-										<b>loadImages</b> - define se carregará todas as imagens de uma determinada categoria<br/>
-										<b>loadSpecialImages</b> - define que imagens especiais dos artigos será carregada<br/>
-										<b>loadThumbnails</b> - define se carregará as thumbnails das imagens<br/>
-										<b>addToExclusionLists</b> - adiciona os artigos à lista de exclusão<br/>
-										<b>exclusionLists</b> - lista de exclusão no qual não deixa repetir o mesmo artigo da categoria nos resultados de busca<br/>
-										<b>excludeCategoriesByNames</b> - adiciona as categorias à lista de exclusão<br/>
-										<b>includeViewCount</b> - define se carregará o número da quantidade total de artigos<br/>
-										<b>offset</b> - define quantos artigos serão pulados<br/>
-										<b>countVar</b> - define quantos artigos totais serão carregados (para paginação)
-										</td>
-									  </tr>
-									  
-									</tbody>
-								</table>
-								<h4 class="mw-pad-b-5">Exemplo1:</h4>
-								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"ArtigosCategoria"</span> <span class="na">categoryName=</span><span class="s">" 'Nome da categoria1', 'Nome da categoria2' "</span> <span class="na">amount=</span><span class="s">"3"</span> <span class="na">includeText=</span><span class="s">"true"</span> <span class="na">withSpecialImages=</span><span class="s">"list ('tipoDaImagem')"</span><span class="nt">/&gt;</span></code></pre></figure>
-								<h4 class="mw-pad-b-5">Exemplo2:</h4>
-								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"articleInfo"</span> <span class="na">articleId=</span><span class="s">"article.articleId"</span> <span class="na">loadImages=</span><span class="s">"false"</span> <span class="na">loadSpecialImages=</span><span class="s">"list('COVER')"</span><span class="nt">/&gt;</span></code></pre></figure>
-								<h4 class="mw-pad-b-5">Exemplo3:</h4>
-								<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5 mw-pad-r-15"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:loadArticles</span> <span class="na">var=</span><span class="s">"searchedNews"</span> <span class="na">loadImages=</span><span class="s">"true"</span> <span class="na">loadSpecialImages=</span><span class="s">"list('Cover')"</span> <span class="na">SearchedValue=</span><span class="s">"search"</span> <span class="na">offset=</span><span class="s">"0"</span> <span class="na">amount=</span><span class="s">"pageSize"</span> <span class="na">countVar=</span><span class="s">"articlesCount"</span><span class="nt">/&gt;</span></code></pre></figure>
-								
-							
-						
-							
-							
-								<h2 id="applyTemplate" class="mw-pad-t-15">&lt;mw:applyTemplate/&gt;</h2>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para aplicar um módulo, template ou page.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag sem conteúdo</td>
-											<td>path</td>
-											<td>
-											<b>path</b> - chama um template, módulo ou page pelo seu diretório
-											</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:applyTemplate</span> <span class="na">path=</span><span class="s">"modules/nomeDoModulo.module"</span><span class="nt">/&gt;</span></code></pre></figure>
-							
-							
-								<h3 id="iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para criar uma repetição de conteúdo.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com conteúdo</td>
-											<td>value, var, limit, offset, index</td>
-											<td>
-											<b>value</b> - insere o valor de uma variável já declarada anteriormente<br/>
-											<b>var</b> - cria uma variável local<br/>
-											<b>limit</b> - define quantos artigos serão mostrados<br/>
-											<b>offset</b> - define quantos artigos serão pulados<br/>
-											<b>index</b> - 
-											</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;iterator</span> <span class="na">value=</span><span class="s">"ArticoManchete"</span> <span class="na">var=</span><span class="s">"article"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/iterator&gt;</span></code></pre></figure>
-									
-							
-							
-								<h3 id="url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada em todas as urls que fazem ligação com os arquivos do site e conteúdos do banco de dados.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com ou sem conteúdo<br/>- Pode ser usada dentro de outra tag HTML</td>
-											<td>value, path</td>
-											<td>
-											<b>value</b> - faz o caminho todo da URL<br/>
-											<b>path</b> - faz o caminho somente da raiz do site
-											</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo1:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url('&lt;mw:Url value='imageArticle.path'/&gt;')"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/div&gt;</span></code></pre></figure>
-									
-									<h4 class="mw-pad-b-5">Exemplo2:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;mw:Url path='~/'/&gt;&lt;mw:property value='categoryInfo.name'/&gt;"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/a&gt;</span></code></pre></figure>
-									
-							
-							
-								<h3 id="property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h3>
-							
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para imprimir algum conteúdo do banco de dados.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag sem conteúdo<br/>- Pode ser usada dentro de outra tag HTML</td>
-											<td>value, format, length</td>
-											<td>
-											<b>value</b> - define o conteúdo que será inserido<br/>
-											<b>format</b> - define formato de data e hora<br/>
-											<b>length</b> - limita a quantidade de caracteres a ser mostrado
-											</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo1:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.header"</span><span class="nt">/&gt;</span></code></pre></figure>
-									
-									<h4 class="mw-pad-b-5">Exemplo2:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.publishDate"</span> <span class="na">format=</span><span class="s">"HH:mm'h' dd/MM/yyyy"</span><span class="nt">/&gt;</span></code></pre></figure>
-									
-									<h4 class="mw-pad-b-5">Exemplo3:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.safeLead"</span> <span class="na">length=</span><span class="s">"100"</span><span class="nt">/&gt;</span></code></pre></figure>
-							
-							
-								<h3 id="if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h3>
-								
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para a criação de uma condição e sua aplicação caso for verdadeira.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com conteúdo</td>
-											<td>test</td>
-											<td><b>test</b> - insere a condição que deseja criar</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo1:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"!isEmpty(article.author)"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre></figure>
-									
-									<h4 class="mw-pad-b-5">Exemplo2:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.publishDate != article.versionDate"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre></figure>
-									
-									<h4 class="mw-pad-b-5">Exemplo3:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size &gt; 0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre></figure>
-									
-							
-							
-								<h3 id="else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com conteúdo<br/>- Tag sem atributos<br/>- Está relacionada com a tag <code>&lt;mw:if&gt;</code></td>
-											<td></td>
-											<td></td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size gt 1"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span><br/><span class="nt">&lt;mw:else&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:else&gt;</span></code></pre></figure>
-									
-								
-							
-								<h3 id="elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa e criando uma nova condição.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com conteúdo<br/>- Está relacionada com a tag <code>&lt;mw:if&gt;</code></td>
-											<td>test</td>
-											<td><b>test</b> - insere a condição que deseja criar</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size&gt;0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span><br/><span class="nt">&lt;mw:elseIf</span> <span class="na">test=</span><span class="s">"article.allImages.size&gt;0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:elseIf&gt;</span></code></pre></figure>
-									
-							
-							
-								<h3 id="renderStyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com conteúdo</td>
-											<td>makeBundle</td>
-											<td><b>makeBundle</b> - permite ou nega a compactação do conteúdo num bundle</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderStyles</span> <span class="na">makeBundle=</span><span class="s">"true"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderStyles&gt;</span></code></pre></figure>
-									
-								<h2 id="renderScripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag com conteúdo</td>
-											<td>makeBundle</td>
-											<td><b>makeBundle</b> - permite ou nega a compactação do conteúdo num bundle</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderScripts</span> <span class="na">makeBundle=</span><span class="s">"false"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderScripts&gt;</span></code></pre></figure>
-							
-							
-								<h3 id="param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h3>
-									<p class="mw-pad-b-15 mw-pad-t-5">Usada para chamar um CSS ou JavaScript externos.</p>
-									
-									<table class="table table-bordered table-striped">
-										<thead>
-										  <tr>
-											<th width="35%">Características</th>
-											<th width="30%">Atributos</th>
-											<th width="35%">Descrição</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr class="active">
-											<td>- Tag sem conteúdo<br/>- Está relacionada com as tags <code>&lt;mw:renderStyles&gt;</code> e <code>&lt;mw:renderScripts&gt;</code></td>
-											<td>value</td>
-											<td>
-											<b>value</b> - define o caminho do css ou javascript
-											</td>
-										  </tr>
-										  
-										</tbody>
-									</table>
-									<h4 class="mw-pad-b-5">Exemplo:</h4>
-									<figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
-									<pre class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:param</span> <span class="na">value=</span><span class="s">"js/bootstrap.min.js"</span><span class="nt">/&gt;</span></code></pre></figure>
-									
-							
-						
+
+
+
+
+            <h2 id="applyTemplate" class="mw-pad-t-15">&lt;mw:applyTemplate/&gt;</h2>
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada para aplicar um módulo, template ou page.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag sem conteúdo</td>
+                  <td>path</td>
+                  <td>
+                    <b>path</b> - chama um template, módulo ou page pelo seu diretório
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:applyTemplate</span> <span class="na">path=</span><span class="s">"modules/nomeDoModulo.module"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+
+
+            <h3 id="iterator" class="mw-pad-t-15">&lt;mw:iterator&gt;...&lt;/mw:iterator&gt;</h3>
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada para criar uma repetição de conteúdo.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag com conteúdo</td>
+                  <td>value, var, limit, offset, index</td>
+                  <td>
+                    <b>value</b> - insere o valor de uma variável já declarada anteriormente<br />
+                    <b>var</b> - cria uma variável local<br />
+                    <b>limit</b> - define quantos artigos serão mostrados<br />
+                    <b>offset</b> - define quantos artigos serão pulados<br />
+                    <b>index</b> -
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <h4 class="mw-pad-b-5">Exemplo:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;iterator</span> <span class="na">value=</span><span class="s">"ArticoManchete"</span> <span class="na">var=</span><span class="s">"article"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/iterator&gt;</span></code></pre>
+            </figure>
+
+
+
+            <h3 id="url" class="mw-pad-t-15">&lt;mw:url&gt;...&lt;/mw:url&gt;</h3>
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada em todas as urls que fazem ligação com os arquivos do site e
+              conteúdos do banco de dados.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag com ou sem conteúdo<br />- Pode ser usada dentro de outra tag HTML</td>
+                  <td>value, path</td>
+                  <td>
+                    <b>value</b> - faz o caminho todo da URL<br />
+                    <b>path</b> - faz o caminho somente da raiz do site
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo1:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url('&lt;mw:Url value='imageArticle.path'/&gt;')"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+
+            <h4 class="mw-pad-b-5">Exemplo2:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;mw:Url path='~/'/&gt;&lt;mw:property value='categoryInfo.name'/&gt;"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/a&gt;</span></code></pre>
+            </figure>
+
+
+
+            <h3 id="property" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:property/&gt;</h3>
+
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada para imprimir algum conteúdo do banco de dados.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag sem conteúdo<br />- Pode ser usada dentro de outra tag HTML</td>
+                  <td>value, format, length</td>
+                  <td>
+                    <b>value</b> - define o conteúdo que será inserido<br />
+                    <b>format</b> - define formato de data e hora<br />
+                    <b>length</b> - limita a quantidade de caracteres a ser mostrado
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo1:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.header"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+
+            <h4 class="mw-pad-b-5">Exemplo2:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.publishDate"</span> <span class="na">format=</span><span class="s">"HH:mm'h' dd/MM/yyyy"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+
+            <h4 class="mw-pad-b-5">Exemplo3:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:property</span> <span class="na">value=</span><span class="s">"article.safeLead"</span> <span class="na">length=</span><span class="s">"100"</span><span class="nt">/&gt;</span></code></pre>
+            </figure>
+
+
+            <h3 id="if" class="mw-pad-t-15">&lt;mw:if&gt;...&lt;/mw:if&gt;</h3>
+
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada para a criação de uma condição e sua aplicação caso for verdadeira.
+            </p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag com conteúdo</td>
+                  <td>test</td>
+                  <td><b>test</b> - insere a condição que deseja criar</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo1:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"!isEmpty(article.author)"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre>
+            </figure>
+
+            <h4 class="mw-pad-b-5">Exemplo2:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.publishDate != article.versionDate"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre>
+            </figure>
+
+            <h4 class="mw-pad-b-5">Exemplo3:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size &gt; 0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span></code></pre>
+            </figure>
+
+
+
+            <h3 id="else" class="mw-pad-t-15">&lt;mw:else&gt;...&lt;/mw:else&gt;</h3>
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag com conteúdo<br />- Tag sem atributos<br />- Está relacionada com a tag
+                    <code>&lt;mw:if&gt;</code></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size gt 1"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span><br/><span class="nt">&lt;mw:else&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:else&gt;</span></code></pre>
+            </figure>
+
+
+
+            <h3 id="elseIf" class="mw-pad-t-15">&lt;mw:elseIf&gt;...&lt;/mw:elseIf&gt;</h3>
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada caso a condição do <code>&lt;mw:if&gt;</code> for falsa e criando
+              uma nova condição.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag com conteúdo<br />- Está relacionada com a tag <code>&lt;mw:if&gt;</code></td>
+                  <td>test</td>
+                  <td><b>test</b> - insere a condição que deseja criar</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:if</span> <span class="na">test=</span><span class="s">"article.imagesNormal.size&gt;0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:if&gt;</span><br/><span class="nt">&lt;mw:elseIf</span> <span class="na">test=</span><span class="s">"article.allImages.size&gt;0"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:elseIf&gt;</span></code></pre>
+            </figure>
+
+
+
+            <h3 id="renderStyles" class="mw-pad-t-15">&lt;mw:renderStyles&gt;...&lt;/mw:renderStyles&gt;</h3>
+            <p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="35%">Características</th>
+                  <th width="30%">Atributos</th>
+                  <th width="35%">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>- Tag com conteúdo</td>
+                  <td>makeBundle</td>
+                  <td><b>makeBundle</b> - permite ou nega a compactação do conteúdo num bundle</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h4 class="mw-pad-b-5">Exemplo:</h4>
+            <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+              <pre
+                class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderStyles</span> <span class="na">makeBundle=</span><span class="s">"true"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderStyles&gt;</span></code></pre>
+            </figure>
+
+            <h2 id="renderScripts" class="mw-pad-t-15">&lt;mw:renderScripts&gt;...&lt;/mw:renderScripts&gt;</h3>
+              <p class="mw-pad-b-15 mw-pad-t-5">Usada para compactar todos os estilos externos usados na página.</p>
+
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th width="35%">Características</th>
+                    <th width="30%">Atributos</th>
+                    <th width="35%">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active">
+                    <td>- Tag com conteúdo</td>
+                    <td>makeBundle</td>
+                    <td><b>makeBundle</b> - permite ou nega a compactação do conteúdo num bundle</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <h4 class="mw-pad-b-5">Exemplo:</h4>
+              <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+                <pre
+                  class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:RenderScripts</span> <span class="na">makeBundle=</span><span class="s">"false"</span><span class="nt">&gt;</span><br/>&nbsp;&nbsp;...<br/><span class="nt">&lt;/mw:RenderScripts&gt;</span></code></pre>
+              </figure>
+
+
+              <h3 id="param" class="mw-pad-b-5 mw-pad-t-15">&lt;mw:param/&gt;</h3>
+              <p class="mw-pad-b-15 mw-pad-t-5">Usada para chamar um CSS ou JavaScript externos.</p>
+
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th width="35%">Características</th>
+                    <th width="30%">Atributos</th>
+                    <th width="35%">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active">
+                    <td>- Tag sem conteúdo<br />- Está relacionada com as tags <code>&lt;mw:renderStyles&gt;</code> e
+                      <code>&lt;mw:renderScripts&gt;</code></td>
+                    <td>value</td>
+                    <td>
+                      <b>value</b> - define o caminho do css ou javascript
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <h4 class="mw-pad-b-5">Exemplo:</h4>
+              <figure class="mw-m-b-15" style="border: 1px solid #e1e1e8;">
+                <pre
+                  class="mw-pad-t-5 mw-pad-l-15 mw-pad-b-5"><code class="language-html" data-lang="html"><span class="nt">&lt;mw:param</span> <span class="na">value=</span><span class="s">"js/bootstrap.min.js"</span><span class="nt">/&gt;</span></code></pre>
+              </figure>
+
+
+
           </section>
           <!-- Changelog
 		============================ -->
