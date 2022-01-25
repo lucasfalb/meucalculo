@@ -130,7 +130,10 @@
               <li class="nav-item"><a class="nav-link" href="#mw_elementosinline">Elementos Inline</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#mw_home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mw_home">Home</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#mw_widgets">Widgets</a></li>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#mw_category">Category</a></li>
           <li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
             <ul class="nav flex-column">
@@ -819,7 +822,7 @@
             <a class="popup-img" href="assets/images/exemplohome.png">
               <img src="assets/images/exemplohome.png" class="img-fluid img-thumbnail" alt="Exemplo Article">
             </a>
-            <h3>Widgets</h3>
+            <h3 id="mw_widgets">Widgets</h3>
             <p>Visualizado então a estrutura da Home, se faz necessário que entendamos o que são os widgets (componentes) que se fazem presentes na tela inicial do site (que se repetirá também no Category). Os componentes são feitos de formas isoladas e aplicadas no módulo da Home através do <code>&lt;mw:applyTemplate/&gt;</code>, montando os widgets de acordo com o projeto e alimentando o conteúdo dele com as Tags MWTPL conseguiremos atingir então o objetivo de uma home que consome automaticamente todas as novas matérias e teremos uma gestão de página interativa através do próprio painel de controle (EliteCS View).</p>
           </section>
 
@@ -829,7 +832,7 @@
             <h2 id="mw_category">Category</h2>
             <p>Apresentado então como construir a Home a partir da montagem com os widgets, o mesmo principio será aplicado ao Category, a sua principal diferença é a mudança da ordem dos elementos(questão visual) e a aplicação do template de Category nas respectivas editorias(procedimento feito no Elite CS View), afim de trazer o conteúdo da mesma.</p>
 
-            <h5>Exempo de etrutura de um Category</h5>
+            <h5>Exempo da estrutura de um Category</h5>
             <a class="popup-img" href="assets/images/exemplohome.png">
               <img src="assets/images/exemplocategory.png" class="img-fluid img-thumbnail" alt="Exemplo Article">
             </a>
