@@ -266,6 +266,13 @@ margin-right: 10px !important;
         font-size: 14px;
     }
 }
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 530px){
+main {
+    height: unset;
+    padding: 20px 0;
+}
+}
 
 /*=== Basic box styling  ===*/
 .box {
@@ -342,9 +349,6 @@ animation-delay: 6.5s;
 animation-delay: 7.5s;
 }
 
-
-
-/*=== Animations start here  ===*/
 
 /*==== FADE IN UP ===*/
 @-webkit-keyframes fadeInUp {
