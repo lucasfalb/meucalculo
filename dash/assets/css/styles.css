@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background: rgb(46, 64, 83);
+    background: linear-gradient(184deg, rgb(46, 64, 83) 0%, rgba(96,132,161,1) 100%); 
+    font-family: 'Montserrat', sans-serif;
+}
+/* RESETCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESETCSS */
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ---- LOGIN AREA ---- */
+.container-login-area{
+    width: 360px;
+    border-radius: 10px;
+    background-color: #353535;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    position: relative;
+    z-index: 20;
+}
+.container-login-area h1{
+    font-weight: bold;
+}
+.container-login-area form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container-login-area form h2 {
+    text-align: left;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+}
+.container-login-area h3{
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+.container-login-area form input{
+    width: 94%;
+    margin:0 auto;
+    padding: 10px;
+}
+.container-login-area form input::placeholder{
+    color: rgb(63, 63, 63);
+}
+.container-login-area form input:focus{
+    outline: none;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo-index{
+    width: 150px;
+}
+.form-password{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container-login-area form button{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(42 46 70 / 54%);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.container-login-area form a {
+    text-decoration: none;
+    font-size: 11px;
+    color: rgb(0 0 0 / 77%);
+}
+.container-login-area a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(0 0 0 / 77%);
+}
+.box-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* ---- LOGIN AREA RESPONSIVIDADE---- */
+@media (max-width: 530px){
+    .container-login-area{
+        width: 90%;
+    }
+}
+/* ---- REGISTER AREA ---- */
+.container-register-area{
+    width: 500px;
+    border-radius: 10px;
+    background-color: #353535;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    position: relative;
+    z-index: 20;
+}
+.container-register-area header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: center; 
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+.container-register-area header h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo-register{
+    width: 120px;
+    height: 80px;
+}
+.container-register-area form{
+    width: 100%;
+}
+.register-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(45px, 1fr);
+    padding: 20px 0;
+    gap: 20px;
+}
+.form-input {
+    grid-column: span 2;
+    display: flex;
+    grid-row: span 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+}
+.form-input input{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.container-register-area form input::placeholder{
+    color: rgb(63, 63, 63);
+}
+.container-register-area form input:focus{
+    outline: none;
+}
+.btn-register{
+    grid-column: span 4;
+    grid-row: span 1;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(42 46 70 / 54%);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.checkbox-form-register{
+    grid-column: span 4;
+    grid-row: span 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.check-terms{
+    grid-column: span 4;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5px;
+    align-items: center;
+  
+}
+.check-terms input{
+margin-right: 10px !important;
+}
+.check-terms a {
+    text-decoration: none;
+    color: rgb(0 0 0 / 77%);
+}
+/* responsividade page registro */
+@media (max-width: 530px){
+    .container-register-area{
+        width: 90%;
+    }
+    .form-input {
+        grid-column: span 4;
+    }
+    .container-register-area header {
+        align-items: flex-end;
+    }
+    .container-register-area header h1 {
+        font-size: 16px;
+    }
+    .check-terms{
+        font-size: 14px;
+    }
+}
+
+/*=== Basic box styling  ===*/
+.box {
+    background: #2ecc71 none repeat scroll 0 0;
+    color: white;
+    float: left;
+    font-family: "Raleway",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 150px;
+    line-height: 150px;
+    margin: 1%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+/*=== Gatilho  ===*/
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+  
+/*=== Tempo dos delays, altere os valores aqui  ===*/
+.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.two {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
+.three {
+-webkit-animation-delay: 2.5s;
+-moz-animation-delay: 2.5s;
+animation-delay: 2.5s;
+}
+
+.four {
+-webkit-animation-delay: 3.5s;
+-moz-animation-delay: 3.5s;
+animation-delay: 3.5s;
+}
+
+.five {
+-webkit-animation-delay: 4.5s;
+-moz-animation-delay: 4.5s;
+animation-delay: 4.5s;
+}
+
+.six {
+-webkit-animation-delay: 5.5s;
+-moz-animation-delay: 5.5s;
+animation-delay: 5.5s;
+}
+
+.seven {
+-webkit-animation-delay: 6.5s;
+-moz-animation-delay: 6.5s;
+animation-delay: 6.5s;
+}
+
+.eight {
+-webkit-animation-delay: 7.5s;
+-moz-animation-delay: 7.5s;
+animation-delay: 7.5s;
+}
+
+
+
+/*=== Animations start here  ===*/
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+/*=== FADE IN DOWN ===*/
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+ }
+@-webkit-keyframes fadeInDown {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+}
+@keyframes fadeInDown {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+} 
+
+/*=== FADE IN LEFT ===*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+
+/*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/*=== FADE IN  ===*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+/*=== FADE IN UP Big ===*/
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+  }
+@-webkit-keyframes fadeInUpBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 2000px, 0);
+	transform: translate3d(0, 2000px, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+	}
+}
+@keyframes fadeInUpBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 2000px, 0);
+	transform: translate3d(0, 2000px, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+	}
+} 
+
+/*=== FADE IN DOWN Big ===*/
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+@-webkit-keyframes fadeInDownBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -2000px, 0);
+	transform: translate3d(0, -2000px, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+}
+@keyframes fadeInDownBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -2000px, 0);
+	transform: translate3d(0, -2000px, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+} 
+
+/*=== FADE IN LEFT Big ===*/
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+@-webkit-keyframes fadeInLeftBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(-2000px, 0, 0);
+	transform: translate3d(-2000px, 0, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+}
+@keyframes fadeInLeftBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(-2000px, 0, 0);
+	transform: translate3d(-2000px, 0, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+} 
+
+/*=== FADE IN RIGHT Big ===*/
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+  }
+@-webkit-keyframes fadeInRightBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(2000px, 0, 0);
+	transform: translate3d(2000px, 0, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+}
+@keyframes fadeInRightBig {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(2000px, 0, 0);
+	transform: translate3d(2000px, 0, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+}
